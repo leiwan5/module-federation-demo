@@ -1,4 +1,8 @@
 import React from 'react';
+import logo from '../../assets/logo.png';
 
-const Header: Header = ({ title }) => <div>{title}</div>;
+const Header: HeaderType = ({ title }) => <div>
+    <img src={logo} width={24} />
+    {title}
+</div>;
 export default Header;

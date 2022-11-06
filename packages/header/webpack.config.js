@@ -21,6 +21,10 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.png?$/,
+        use: "file-loader",
+      },
+      {
         test: /\.tsx?$/,
         use: "babel-loader",
         exclude: /node_modules/,
